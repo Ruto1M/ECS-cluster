@@ -4,6 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
+    profile = "Dami"
     bucket = "my-terraform-state100028927365"
     key    = "state/terraform.tfstate"
     region = "us-east-1"
